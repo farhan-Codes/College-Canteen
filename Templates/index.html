@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+{% block title %}Home{% endblock %}
+{% block head %}
+    {{super()}}
+    <style>
+        .hero {
+            background-image: url('https://hometriangle.com/blogs/content/images/2024/03/South-Indian-Foods.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-shadow: 2px 2px 4px #000000;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3.5rem;
+        }
+        .hero p {
+            font-size: 1.25rem;
+        }
+        .section-title {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .food-img {
+            width: 100%;
+            height:auto;
+        }
+    </style>
+{% endblock %}
+{% block content %} 
+<div class="hero">
+    <div class="container">
+        <h1>Welcome to the College Canteen!</h1>
+        <p>Providing fresh and healthy meals to the college community.</p>
+        <a href="menu.html" class="btn btn-primary">View Menu</a>
+    </div>
+</div>
+
+<div class="container mt-5">
+    <div class="section-title">
+        <h2>Special Announcements</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">New Vegan Menu!</h5>
+                    <p class="card-text">Explore our new vegan options made with fresh ingredients.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Discount on Breakfast Combo</h5>
+                    <p class="card-text">Get a discount on our popular breakfast combo this week!</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Upcoming Food Festival</h5>
+                    <p class="card-text">Join us for the upcoming food festival on campus.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Today's Specials</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Grilled-Chicken-Sandwich-600x600.jpg" alt="Grilled Chicken Sandwich" class="food-img">
+            <h3>Grilled Chicken Sandwich</h3>
+            <p>$6.50</p>
+        </div>
+        <div class="col-md-4">
+            <img src="https://gruhasutram.com/wp-content/uploads/2023/03/GRUhaSutram-Fluffy-Nutritious-Millet-Idli-01.webp" alt="Idli" class="food-img">
+            <h3>Idli</h3>
+            <p>$7.00</p>
+        </div>
+        <div class="col-md-4">
+            <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/video-api/assets/165384.jpg?output-format=auto&output-quality=auto&resize=600:*" alt="Classic Cheeseburger" class="food-img">
+            <h3>Classic Cheeseburger</h3>
+            <p>$5.50</p>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Customer Reviews</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <blockquote class="blockquote">
+                <p class="mb-0">"The best food on campus! Always fresh and tasty."</p>
+                <footer class="blockquote-footer">Jane Doe, <cite title="Source Title">Sophomore</cite></footer>
+            </blockquote>
+        </div>
+        <div class="col-md-6">
+            <blockquote class="blockquote">
+                <p class="mb-0">"Great variety and excellent service."</p>
+                <footer class="blockquote-footer">John Smith, <cite title="Source Title">Senior</cite></footer>
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Featured Dish of the Week</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="card">
+                <img src="https://www.mohanresidency.com/images/foodbanner2.JPG" class="card-img-top" alt="Featured Dish">
+                <div class="card-body">
+                    <h5 class="card-title">Spicy Thai Noodles</h5>
+                    <p class="card-text">Enjoy our spicy Thai noodles, made with fresh ingredients and a blend of authentic spices.</p>
+                    <a href="menu.html" class="btn btn-primary">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title">
+        <h2>Our Popular Dishes</h2>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <h3>Paneer Butter Masala</h3>
+            <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2020/01/paneer-butter-masala-5.jpg" alt="Paneer Butter Masala" class="food-img">
+            <p>Delicious paneer cubes in a creamy tomato gravy, served with naan or rice.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Chicken Biryani</h3>
+            <img src="https://www.licious.in/blog/wp-content/uploads/2020/12/Hyderabadi-chicken-Biryani-600x600.jpg" alt="Chicken Biryani" class="food-img">
+            <p>Flavorful chicken biryani, a perfect blend of spices, rice, and tender chicken.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Masala Dosa</h3>
+            <img src="https://iyerkitchen.org/wp-content/uploads/2023/10/Mysore-Special-Dosa.png" alt="Masala Dosa" class="food-img">
+            <p>Crispy dosa filled with spicy potato filling, served with chutney and sambar.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% block head %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    {% endblock %}
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <a class="navbar-brand" href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRohZsN2pw5T-QgzoYXX4TaH1jUnwgtoWD7fg&s" alt="Logo" width="30" height="24" class="d-inline-block align-text-top mx-3">
+      SFGC Canteen</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+              <li class="nav-item"><a class="nav-link" href="order.html">Order Online</a></li>
+              <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+      </div>
+  </nav>
+      {% block content %}{% endblock %}
+      <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <!-- Contact Info -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">SFGC</h5>
+                    <p>No.26,Yelahanka New town,Bengaluru-560064</p>
+                    <p>Email:sfgclibraryyelahanka@gmail.com</p>
+                    <p>Phone: +918022955369</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Quick Links</h5>
+                    <p>
+                        <a href="#" class="text-light" style="text-decoration: none;">Home</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-light" style="text-decoration: none;">About</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-light" style="text-decoration: none;">Services</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-light" style="text-decoration: none;">Contact</a>
+                    </p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Follow Us</h5>
+                    <a href="#"><i class="bi bi-facebook text-light mr-4"></i></a>
+                    <a href="#"><i class="bi bi-twitter text-light mr-4"></i></a>
+                    <a href="#"><i class="bi bi-instagram text-light mr-4"></i></a>
+                    <a href="#"><i class="bi bi-linkedin text-light mr-4"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8 col-lg-8">
+                    <p class="text-center text-light mt-3">
+                        &copy; 2024 Sheshadripuram First Grade College. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
